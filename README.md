@@ -19,22 +19,22 @@ cargo install blazing_fibonacci
 
 ## Benchmarks
 
-~ ❯ blazing_fibonacci 7000000 -t    
+~ ❯ blazing_fibonacci 7000000 -t 
 
-Fibonacci number of 7000000 calculated, use -p to display,-t to show timing
+Fibonacci number of 7000000 calculated, use -p to display
 
 Time taken: 1.37s
 
-~ ❯ blazing_fibonacci 650000 -t                                            
+~ ❯ blazing_fibonacci 650000 -t                                          
 
-Fibonacci number of 650000 calculated, use -p to display,-t to show timing
+Fibonacci number of 650000 calculated, use -p to display
 
 Time taken: 59.20ms
 
 
 ~ ❯ blazing_fibonacci 1000000 -t           
 
-Fibonacci number of 1000000 calculated, use -p to display,-t to show timing
+Fibonacci number of 1000000 calculated, use -p to display
 
 Time taken: 81.59ms
 
@@ -49,9 +49,9 @@ To install the calculator, use the following command:
 
 blazing_fibonacci 1000           # Calculate the 1000th Fibonacci number
 
-blazing_fibonacci -n 1000 -p     # Calculate and print the full number
+blazing_fibonacci 1000 -p     # Calculate and print the full number
 
-blazing_fibonacci -n 1000 -t     # Show the calculation time
+blazing_fibonacci  1000 -t     # Show the calculation time
 
 blazing_fibonacci -h             # Show help and usage instructions
 
@@ -60,7 +60,7 @@ blazing_fibonacci -h             # Show help and usage instructions
  ## Verifications
 
 blazing_fibonacci 1000000 -t                               
-Fibonacci number of 1000000 calculated, use -p to display,-t to show timing
+Fibonacci number of 1000000 calculated, use -p to display
 Time taken: 80.40ms
 
  
