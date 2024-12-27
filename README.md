@@ -24,11 +24,11 @@ cargo install blazing_fibonacci
 
 To install the calculator, use the following command:
 
-fibbi 1000           # Calculate the 1000th Fibonacci number
+blazing_fibonacci 1000           # Calculate the 1000th Fibonacci number
 
-fibbi -n 1000 -p     # Calculate and print the full number
+blazing_fibonacci -n 1000 -p     # Calculate and print the full number
 
-fibbi -n 1000 -t     # Show the calculation time
+blazing_fibonacci -n 1000 -t     # Show the calculation time
 
-fibbi -h             # Show help and usage instructions
+blazing_fibonacci -h             # Show help and usage instructions
 
