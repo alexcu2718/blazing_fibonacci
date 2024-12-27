@@ -5,7 +5,7 @@ edition = "2021"
 authors = ["Alex Curtis <alexcu@tutanota.com>"]
 description = "A fast Fibonacci number calculator using matrix exponentiation."
 license = "MIT"
-repository = "https://github.com/your-repo-link" # Replace with your actual GitHub link
+repository = "https://github.com/alexcu2718/fast_fibonacci"
 
 [dependencies]
 clap = { version = "4.5.23", features = ["derive"] }

@@ -15,9 +15,20 @@ I created it to explore Rust's capabilities and, admittedly, to flex a bit!
 
 ## Installation
 
+cargo install blazing_fibonacci
+
+
+## Usage
+
+
+
 To install the calculator, use the following command:
 
 fibbi 1000           # Calculate the 1000th Fibonacci number
+
 fibbi -n 1000 -p     # Calculate and print the full number
+
 fibbi -n 1000 -t     # Show the calculation time
+
 fibbi -h             # Show help and usage instructions
+
