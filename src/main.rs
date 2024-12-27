@@ -1,7 +1,7 @@
 use clap::Parser;
 use std::time::{Instant,Duration};
 use num_bigint::BigUint;
-use fast_fibonacci::fast_fib;
+use blazing_fibonacci::fast_fib;
 
 const VERSION: &str = env!("CARGO_PKG_VERSION");
 
