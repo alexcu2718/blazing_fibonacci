@@ -1,6 +1,6 @@
 [package]
 name = "blazing_fibonacci"
-version = "0.1.1"
+version = "0.1.2"
 edition = "2021"
 authors = ["Alex Curtis <alexcu@tutanota.com>"]
 description = "A fast Fibonacci number calculator using matrix exponentiation."

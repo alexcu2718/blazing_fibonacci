@@ -58,6 +58,11 @@ blazing_fibonacci -h             # Show help and usage instructions
 
 
  ## Verifications
+
+blazing_fibonacci 1000000 -t                               
+Fibonacci number of 1000000 calculated, use -p to display,-t to show timing
+Time taken: 80.40ms
+
  
  for i in {1..1000}; do                                                                            
   blazing_fibonacci $i -p -t | sed -n '2,3p' | awk -v num=$i '{print num, $0}' >> TESTFIB.txt
