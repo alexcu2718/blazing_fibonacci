@@ -17,6 +17,29 @@ I created it to explore Rust's capabilities and, admittedly, to flex a bit!
 
 cargo install blazing_fibonacci
 
+## Benchmarks
+
+~ ❯ blazing_fibonacci 7000000 -t    
+
+Fibonacci number of 7000000 calculated, use -p to display,-t to show timing
+
+Time taken: 1.37s
+
+~ ❯ blazing_fibonacci 650000 -t                                            
+
+Fibonacci number of 650000 calculated, use -p to display,-t to show timing
+
+Time taken: 59.20ms
+
+
+~ ❯ blazing_fibonacci 1000000 -t           
+
+Fibonacci number of 1000000 calculated, use -p to display,-t to show timing
+
+Time taken: 81.59ms
+
+
+
 
 ## Usage
 
@@ -32,3 +55,15 @@ blazing_fibonacci -n 1000 -t     # Show the calculation time
 
 blazing_fibonacci -h             # Show help and usage instructions
 
+
+
+ ## Verifications
+ 
+ for i in {1..1000}; do                                                                            
+  blazing_fibonacci $i -p -t | sed -n '2,3p' | awk -v num=$i '{print num, $0}' >> TESTFIB.txt
+done
+
+
+
+
+ 
