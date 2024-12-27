@@ -54,7 +54,7 @@ fn main() {
 
     if !args.print & args.timing {println!("Fibonacci number of {} calculated, use -p to display", args.number.unwrap())}
 
-    if args.print & args.timing {println!("Fibonacci number of {} calculated"git, args.number.unwrap())}
+    if args.print & args.timing {println!("Fibonacci number of {} calculated", args.number.unwrap())}
     
     if args.print {
         println!("Value: {}", result);
