@@ -38,12 +38,16 @@ Fibonacci number of 1000000 calculated, use -p to display
 
 Time taken: 81.59ms
 
+## Changelog 0.2
 
+Added Rayon as a dependency, it's pretty much in every crate anyway.
+It can now calculate up to 11million in less than a second on a shitty computer!
 
+blazing_fibonacci  11000000 -t
+Fibonacci number of 11000000 calculated
+Time taken: 935.18ms
 
 ## Usage
-
-
 
 To install the calculator, use the following command:
 
@@ -55,20 +59,8 @@ blazing_fibonacci  1000 -t     # Show the calculation time
 
 blazing_fibonacci -h             # Show help and usage instructions
 
+## Verifications
 
-
- ## Verifications
-
-blazing_fibonacci 1000000 -t                               
-Fibonacci number of 1000000 calculated, use -p to display
-Time taken: 80.40ms
-
- 
  for i in {1..1000}; do                                                                            
-  blazing_fibonacci $i -p -t | sed -n '2,3p' | awk -v num=$i '{print num, $0}' >> TESTFIB.txt
+  blazing_fibonacci $i -p -t | sed -n '2,3p' | awk -v num=$i '{print num, $0}' >> ~/TESTFIB.txt
 done
-
-
-
-
- 

@@ -1,7 +1,7 @@
 use clap::Parser;
 use std::time::{Instant,Duration};
 use num_bigint::BigUint;
-use blazing_fibonacci::fast_fib;
+use blazing_fibonacci::fast_double;
 
 const VERSION: &str = env!("CARGO_PKG_VERSION");
 
@@ -29,22 +29,26 @@ struct Args {
         help="Display execution time",
         help_heading = "Display Options"
     )]
-    timing: bool,
+    timing: bool
 
-    #[arg(short='v', long="version", help="Show version number", action=clap::ArgAction::SetTrue)]
-    version: bool,
+   
    
 }
 
 fn main() {
     let args: Args = Args::parse();
-    if args.version {
-        println!("Version: {}", VERSION);
-        return;
-    }
+       
+    let _number = match args.number {
+        Some(n) => n,
+        None => {
+            eprintln!("Error: Please provide a number");
+            std::process::exit(1);
+        }
+    };
+   
 
     let now: Instant = Instant::now();
-    let result: BigUint = fast_fib(args.number.unwrap());
+    let result: BigUint = fast_double(args.number.unwrap());
     let elapsed:Duration = now.elapsed();
 
 
