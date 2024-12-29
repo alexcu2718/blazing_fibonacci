@@ -1,9 +1,9 @@
 [package]
 name = "blazing_fibonacci"
-version = "0.2.0"
+version = "0.2.5"
 edition = "2021"
 authors = ["Alex Curtis <alexcu@tutanota.com>"]
-description = "A fast Fibonacci number calculator using matrix exponentiation."
+description = "A fast Fibonacci number calculator using matrix exponentiation and fast doubling."
 license = "MIT"
 repository = "https://github.com/alexcu2718/blazing_fibonacci"
 
@@ -11,6 +11,5 @@ repository = "https://github.com/alexcu2718/blazing_fibonacci"
 clap = { version = "4.5.23", features = ["derive"] }
 num-bigint = "0.4.6"
 num-traits = "0.2.19"
-rayon = "1.10.0"
 
 

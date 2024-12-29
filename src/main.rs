@@ -11,7 +11,7 @@ const VERSION: &str = env!("CARGO_PKG_VERSION");
     author = "Alex Curtis <alexcu@tutanota.com>",
     version = VERSION,
     about = "Fast Fibonacci number calculator",
-    long_about = "Finds Fibonacci numbers blazingly fast using matrix exponentiation."
+    long_about = "Finds Fibonacci numbers blazingly fast using matrix exponentiation and fast doubling."
 )]
 struct Args {
  
