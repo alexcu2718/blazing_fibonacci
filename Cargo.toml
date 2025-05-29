@@ -9,7 +9,11 @@ repository = "https://github.com/alexcu2718/blazing_fibonacci"
 
 [dependencies]
 clap = { version = "4.5.23", features = ["derive"] }
-num-bigint = "0.4.6"
-num-traits = "0.2.19"
+rug = "1.27.0"
 
+[dev-dependencies]
+criterion = "0.5.1"
 
+[[bench]]
+name = "benchmark"
+harness = false
